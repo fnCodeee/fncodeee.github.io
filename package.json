@@ -1,25 +1,25 @@
-{
-  "homepage": "https://fncodeee.github.io",
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
-  },
-  "scripts": {
-    "build": "cp -r ./src ./build",
-    "predeploy": "echo \"No build step needed\"",
-    "deploy": "gh-pages -d ./"
-  },
-  "name": "myvanilla_porto",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fnCodeee/myProfile_web.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fnCodeee/myProfile_web/issues"
-  },
-  "description": ""
-}
+  {
+    "homepage": "https://fncodeee.github.io",
+    "devDependencies": {
+      "gh-pages": "^6.3.0"
+    },
+    "scripts": {
+      "build": "mkdir -p build && cp -r ./index.html ./assets ./css ./libs ./module ./main.js ./build/",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
+    },
+    "name": "myvanilla_porto",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/fnCodeee/myProfile_web.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/fnCodeee/myProfile_web/issues"
+    },
+    "description": ""
+  }

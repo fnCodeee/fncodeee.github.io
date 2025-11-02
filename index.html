@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MY PROFILE</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.4/dist/lenis.css">
-  <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script> 
-
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.4/dist/lenis.css"
+    />
+    <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
 
     <script>
       tailwind.config = {
@@ -43,7 +45,7 @@
         class="flex min-h-screen w-screen justify-center bg-striped-background bg-cover bg-no-repeat p-0 sm:p-8 text-white"
       >
         <main
-          class="flex min-h-full w-full max-w-screen-xl grow overflow-hidden flex-col items-start  border border-stone-900 brightness-75 shadow-strong sm:rounded-3xl animate-page-in bg-zinc-900"
+          class="flex min-h-full w-full max-w-screen-xl grow overflow-hidden flex-col items-start border border-stone-900 brightness-75 shadow-strong sm:rounded-3xl animate-page-in bg-zinc-900"
         >
           <div class="flex items-center justify-between p-4 sm:p-8">
             <a
@@ -100,9 +102,10 @@
                       >
                         Hi, I'm Faiz Atha
                       </h1>
-                      <div id="link__" class="flex text-stone-400 gap-x-3">
-                        <script src="./module/social_media_links.js"></script>
-                      </div>
+                      <div
+                        id="link__"
+                        class="flex text-stone-400 gap-x-3"
+                      ></div>
                     </div>
 
                     <p class="mt-6 text-sm">
@@ -158,20 +161,25 @@
                       <p
                         class="prose prose-sm whitespace-pre-line text-gray-200 sm:prose-base"
                       >
-                      I’m a curious self-taught developer with a strong passion for IoT and web technologies. Born in Magelang and
-                      raised in Karawang, I recently graduated from vocational high school and now spend most of my time exploring
-                      personal tech projects — from web apps to microcontroller automation.
-                      <br />Outside of coding, I enjoy tinkering with old electronics, creating useful things out of leftovers,
-                      and immersing myself in the peaceful world of Minecraft with shaders on. I believe learning is not about
-                      rushing to the top, but growing steadily with each line of code. <br />I dream of building meaningful tools—
-                      no matter how small — that make life just a little better for others.
-                    </p>
+                        I’m a curious self-taught developer with a strong
+                        passion for IoT and web technologies. Born in Magelang
+                        and raised in Karawang, I recently graduated from
+                        vocational high school and now spend most of my time
+                        exploring personal tech projects — from web apps to
+                        microcontroller automation.
+                        <br />Outside of coding, I enjoy tinkering with old
+                        electronics, creating useful things out of leftovers,
+                        and immersing myself in the peaceful world of Minecraft
+                        with shaders on. I believe learning is not about rushing
+                        to the top, but growing steadily with each line of code.
+                        <br />I dream of building meaningful tools— no matter
+                        how small — that make life just a little better for
+                        others.
+                      </p>
                       <ul
                         id="profile_list"
                         class="grid grid-cols-1 gap-4 lg:grid-cols-2"
-                      >
-                        <script src="./module/profile.js"></script>
-                      </ul>
+                      ></ul>
                     </div>
                   </div>
                   <div class="block lg:hidden">
@@ -200,6 +208,28 @@
                 </div>
               </div>
             </section>
+
+            <!-- Tech Stack -->
+            <section id="my_project">
+              <div class="p-4 pt-12 md:p-6 md:pt-12">
+                <div class="block">
+                  <h2
+                    class="mb-4 font-brand-primary text-2xl font-extrabold tracking-tight text-stone-200 sm:text-3xl"
+                    style="
+                      text-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px,
+                        rgba(0, 0, 0, 0.4) 14px 8px 20px,
+                        rgba(0, 0, 0, 0.1) 30px 30px 30px;
+                    "
+                  >
+                    <span class="text-green-600">Tech</span> Stack
+                  </h2>
+                </div>
+
+                
+              </div>
+            </section>
+
+
             <section id="stats">
               <div class="p-4 pt-12 md:p-8 md:pt-12">
                 <div class="hidden lg:block">
@@ -214,7 +244,7 @@
                     Sta<span class="text-green-600">ts</span>
                   </h2>
                 </div>
-                
+
                 <div class="block lg:hidden">
                   <h2
                     class="mb-4 font-brand-primary text-2xl font-extrabold tracking-tight text-stone-200 sm:text-3xl"
@@ -231,7 +261,7 @@
                   id="stats__container"
                   class="grid grid-cols-2 gap-4 lg:grid-cols-4"
                 >
-                  <script src="./module/stats.js"></script>
+                  <!-- For LOOP | JS -->
                 </div>
               </div>
             </section>
@@ -261,35 +291,21 @@
                     <span class="text-green-600">My</span> Projects
                   </h2>
                 </div>
-                <div
-                  id="myprojects__container"
-                  class="w-full"
-                >
-                  <script src="./module/myproject.js"></script>
+                <div id="myprojects__container" class="w-full">
+                  <!-- /module/myproject.js | JS -->
                 </div>
               </div>
             </section>
-            <section id="my_project">
-              <div class="p-4 pt-12 md:p-6 md:pt-12">
-                <div class="block">
-                  <h2
-                    class="mb-4 font-brand-primary text-2xl font-extrabold tracking-tight text-stone-200 sm:text-3xl"
-                    style="
-                      text-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px,
-                        rgba(0, 0, 0, 0.4) 14px 8px 20px,
-                        rgba(0, 0, 0, 0.1) 30px 30px 30px;
-                    "
-                  >
-                    <span class="text-green-600">My</span> Projects
-                  </h2>
-                </div>
-              </div>
-            </section>
-
           </div>
         </main>
       </div>
     </div>
   </body>
+
+  <!-- All Script -->
+  <script type="module" src="./module/social_media_links.js"></script>
+  <script type="module" src="./module/profile.js"></script>
+  <script type="module" src="./module/stats.js"></script>
+  <script type="module" src="./module/myproject.js"></script>
   <script type="module" src="./main.js"></script>
 </html>
