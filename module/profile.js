@@ -1,18 +1,5 @@
 import profile from "../api/profileDatas.js";
 
-const birthday = new Date("2007-01-22");
-const today = new Date();
-
-let age = today.getFullYear() - birthday.getFullYear();
-
-const hasHadBirthdayThisYear =
-  today.getMonth() > birthday.getMonth() ||
-  (today.getMonth() === birthday.getMonth() &&
-    today.getDate() >= birthday.getDate());
-
-if (!hasHadBirthdayThisYear) {
-  age -= 1;
-}
 
 const profile_list = document.getElementById("profile_list");
 
@@ -27,3 +14,5 @@ for (let i = 0; i < profile.length; i++) {
 
   profile_list.appendChild(li);
 }
+
+export default age;
