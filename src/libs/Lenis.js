@@ -2,7 +2,7 @@
 export default function LenisScrooling() {
   const lenis = new Lenis({
     smooth: true,
-    lerp: 0.1,
+    lerp: 0.06,
     WheelMultiplier: 1,
     touchMultiplier: 1,
     infinite: false,

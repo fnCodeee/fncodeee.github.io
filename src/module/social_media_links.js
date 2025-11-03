@@ -4,7 +4,7 @@ new Typed(".typed-text", {
     "Server Side Web Apps",
     "Interactive Web Apps",
     "IoT project",
-    "Cool UIs with Tailwind",
+    "Cool UI with Tailwind",
     "Backend with Node.js",
   ],
   typeSpeed: 60,

@@ -14,5 +14,3 @@ for (let i = 0; i < profile.length; i++) {
 
   profile_list.appendChild(li);
 }
-
-export default age;
