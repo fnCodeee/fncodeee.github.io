@@ -4,14 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Faiz Atha</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lenis Smooth scroll | CDN -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/lenis@1.3.4/dist/lenis.css"
     />
     <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
 
-    <script>
+    <!-- Font | CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Animate Typed | CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Tailwindcss v4.1 | CDN (Enabled) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      * {
+        font-family: "Fira Sans", sans-serif;
+      }
+      @theme {
+        --animate-fill: fill 1s ease-in-out forwards;
+
+        @keyframes fill {
+          0% {
+            width: 0%;
+          }
+          100% {
+            width: var(--target-width);
+          }
+        }
+      }
+    </style>
+
+    <!-- Tailwind v3.14.7 | CDN -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <script>
       tailwind.config = {
         theme: {
           extend: {
@@ -21,23 +55,9 @@
           },
         },
       };
-    </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&family=Oswald:wght@200..700&display=swap"
-      rel="stylesheet"
-    />
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    </script> -->
   </head>
-  <style>
-    * {
-      /* box-sizing: border-box; */
-      font-family: "Fira Sans", sans-serif;
-    }
-  </style>
+
   <body>
     <div id="__app">
       <div
@@ -227,10 +247,10 @@
 
                 <div
                   id="techStack_container"
-                  class="w-full flex flex-col md:flex-row gap-8"
+                  class="w-full flex flex-col md:grid md:grid-cols-3 gap-8"
                 >
                   <!-- Frontend -->
-                  <div class="w-full flex bg-zinc-800 p-4 rounded-xl">
+                  <div class="w-full flex h-full bg-zinc-800 p-6 rounded-xl">
                     <div class="w-full flex flex-col gap-8">
                       <div
                         class="shadow-md shadow-black/30 py-4 px-5 w-max font-semibold text-2xl rounded-xl"
@@ -242,12 +262,12 @@
                       <div>
                         <div class="flex justify-between">
                           <span>HTML</span>
-                          <span>83%</span>
+                          <span>92%</span>
                         </div>
                         <div class="w-full bg-zinc-700/40 rounded-full h-2.5">
                           <div
-                            class="h-full bg-green-600 rounded-full"
-                            style="width: 83%"
+                            class="bar h-full bg-green-600 rounded-full transition-all duration-1000 ease-out"
+                            style="width: 0%; --target-width: 92%"
                           ></div>
                         </div>
                       </div>
@@ -256,12 +276,12 @@
                       <div>
                         <div class="flex justify-between">
                           <span>CSS</span>
-                          <span>74%</span>
+                          <span>80%</span>
                         </div>
                         <div class="w-full bg-zinc-700/40 rounded-full h-2.5">
                           <div
-                            class="h-full bg-green-600 rounded-full"
-                            style="width: 74%"
+                            class="bar h-full bg-green-600 rounded-full transition-all duration-1000 ease-out"
+                            style="width: 0%; --target-width: 80%"
                           ></div>
                         </div>
                       </div>
@@ -269,12 +289,12 @@
                       <div>
                         <div class="flex justify-between">
                           <span>Javascript</span>
-                          <span>56%</span>
+                          <span>64%</span>
                         </div>
                         <div class="w-full bg-zinc-700/40 rounded-full h-2.5">
                           <div
-                            class="h-full bg-green-600 rounded-full"
-                            style="width: 56%"
+                            class="bar h-full bg-green-600 rounded-full transition-all duration-1000 ease-out"
+                            style="width: 0%; --target-width: 64%"
                           ></div>
                         </div>
                       </div>
@@ -286,8 +306,8 @@
                         </div>
                         <div class="w-full bg-zinc-700/40 rounded-full h-2.5">
                           <div
-                            class="h-full bg-green-600 rounded-full"
-                            style="width: 48%"
+                            class="bar h-full bg-green-600 rounded-full transition-all duration-1000 ease-out"
+                            style="width: 0%; --target-width: 48%"
                           ></div>
                         </div>
                       </div>
@@ -295,7 +315,7 @@
                   </div>
 
                   <!-- Backend -->
-                  <div class="w-full flex bg-zinc-800 p-4 rounded-xl">
+                  <div class="w-full flex h-full bg-zinc-800 p-6 rounded-xl">
                     <div class="w-full flex flex-col gap-8">
                       <div
                         class="shadow-md shadow-black/30 py-4 px-5 w-max font-semibold text-2xl rounded-xl"
@@ -310,8 +330,8 @@
                         </div>
                         <div class="w-full bg-zinc-700/40 rounded-full h-2.5">
                           <div
-                            class="h-full bg-green-600 rounded-full"
-                            style="width: 42%"
+                            class="bar h-full bg-green-600 rounded-full transition-all duration-1000 ease-out"
+                            style="width: 0%; --target-width: 42%"
                           ></div>
                         </div>
                       </div>
@@ -323,8 +343,8 @@
                         </div>
                         <div class="w-full bg-zinc-700/40 rounded-full h-2.5">
                           <div
-                            class="h-full bg-green-600 rounded-full"
-                            style="width: 35%"
+                            class="bar h-full bg-green-600 rounded-full transition-all duration-1000 ease-out"
+                            style="width: 0%; --target-width: 35%"
                           ></div>
                         </div>
                       </div>
@@ -336,27 +356,78 @@
                         </div>
                         <div class="w-full bg-zinc-700/40 rounded-full h-2.5">
                           <div
-                            class="h-full bg-green-600 rounded-full"
-                            style="width: 46%"
+                            class="bar h-full bg-green-600 rounded-full transition-all duration-1000 ease-out"
+                            style="width: 0%; --target-width: 46%"
                           ></div>
                         </div>
                       </div>
 
                       <div>
                         <div class="flex justify-between">
-                          <span>Firebase</span>
-                          <span>32%</span>
+                          <span>Firebase (Firestore & RealtimeDB)</span>
+                          <span>26%</span>
                         </div>
                         <div class="w-full bg-zinc-700/40 rounded-full h-2.5">
                           <div
-                            class="h-full bg-green-600 rounded-full"
-                            style="width: 32%"
+                            class="bar h-full bg-green-600 rounded-full transition-all duration-1000 ease-out"
+                            style="width: 0%; --target-width: 26%"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Server -->
+                  <div class="w-full h-full bg-zinc-800 p-6 rounded-xl">
+                    <div class="w-full flex flex-col gap-8">
+                      <div
+                        class="shadow-md shadow-black/30 py-4 px-5 w-max font-semibold text-2xl rounded-xl"
+                      >
+                        <h2>DevOps</h2>
+                      </div>
+
+                      <div>
+                        <div class="flex justify-between">
+                          <span>Docker</span>
+                          <span>25%%</span>
+                        </div>
+                        <div class="w-full bg-zinc-700/40 rounded-full h-2.5">
+                          <div
+                            class="bar h-full bg-green-600 rounded-full transition-all duration-1000 ease-out"
+                            style="width: 0%; --target-width: 25%"
+                          ></div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div class="flex justify-between">
+                          <span>Nginx</span>
+                          <span>12%%</span>
+                        </div>
+                        <div class="w-full bg-zinc-700/40 rounded-full h-2.5">
+                          <div
+                            class="bar h-full bg-green-600 rounded-full transition-all duration-1000 ease-out"
+                            style="width: 0%; --target-width: 12%"
+                          ></div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div class="flex justify-between">
+                          <span>Vercel</span>
+                          <span>28%</span>
+                        </div>
+                        <div class="w-full bg-zinc-700/40 rounded-full h-2.5">
+                          <div
+                            class="bar h-full bg-green-600 rounded-full transition-all duration-1000 ease-out"
+                            style="width: 0%; --target-width: 28%"
                           ></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
                 <p class="w-full text-center italic mt-6">
                   Personal estimates based on learning progress
                 </p>
@@ -446,12 +517,12 @@
         </main>
       </div>
     </div>
-  </body>
 
-  <!-- All Script -->
-  <script type="module" src="./module/social_media_links.js"></script>
-  <script type="module" src="./module/profile.js"></script>
-  <script type="module" src="./module/stats.js"></script>
-  <script type="module" src="./module/myproject.js"></script>
-  <script type="module" src="./main.js"></script>
+    <!-- All Script -->
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./src/module/profile.js"></script>
+    <script type="module" src="./src/module/social_media_links.js"></script>
+    <script type="module" src="./src/module/stats.js"></script>
+    <script type="module" src="./src/module/myproject.js"></script>
+  </body>
 </html>
