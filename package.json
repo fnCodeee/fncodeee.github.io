@@ -4,7 +4,7 @@
       "gh-pages": "^6.3.0"
     },
     "scripts": {
-      "build": "mkdir -p build && cp -r ./index.html ./assets ./api ./css ./libs ./module ./main.js ./build/",
+      "build": "mkdir -p build && cp -r ./index.html ./assets ./src ./css ./main.js ./build/",
       "predeploy": "npm run build",
       "deploy": "gh-pages -d build"
     },
