@@ -1,0 +1,34 @@
+DOKUMENRATASI:
+	PORTFOLIO:
+- Kendala yang di alami : 
+	- Error (syntax): penulisan syntax sensitif pada custom tailwindcss (CDN) = "extends: {...}" -> salah, "extend: {...}" -> benar,
+	- Error (classList.add): karena pas querySelectorAll(".bar") itu semua yang ber class bar -> di anggap array, makanya kita perlu fetch dengan forEach baru gunakan classList add pada 		parameter
+	
+- INFOTMASI :
+	- Custom Tailwindcss: fill -> class = ( animate-fill ) dia berhubungan dengan custom tailwind:  
+	
+              fill: {
+                "0%": { width: "0%" },
+                "100%": { width: "var(--target-width)" },
+              },
+            animation: {
+              fill: "fill 1s ease-in forwards",
+            },
+            
+            maka pada class nya jadi animate-fill, karena pake custom tailwind versi 3.14:
+            
+	 // Custom tailwind Versi 3.14
+        theme: {
+          extend: {
+            keyframes: {
+              fill: {
+                "0%": { width: "0%" },
+                "100%": { width: "var(--target-width)" },
+              },
+            },
+            animation: {
+              fill: "fill 1s ease-in forwards",
+            },
+          },
+        },
+

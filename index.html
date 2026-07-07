@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -61,7 +61,7 @@
   <body>
     <div id="__app">
       <div
-        style="background-image: url('./assets/waves1.svg')"
+        style="background-image: url(&quot;./assets/waves1.svg&quot;)"
         class="flex min-h-screen w-screen justify-center bg-striped-background bg-cover bg-no-repeat p-0 sm:p-8 text-white"
       >
         <main
@@ -71,7 +71,8 @@
             <a
               class="inline-flex items-center rounded-md text-xl focus:outline-none focus:ring-2 focus:ring-green-600 sm:text-3xl"
               style="
-                text-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px,
+                text-shadow:
+                  rgba(0, 0, 0, 0.5) 10px 10px 10px,
                   rgba(0, 0, 0, 0.4) 14px 8px 20px,
                   rgba(0, 0, 0, 0.1) 30px 30px 30px;
               "
@@ -129,16 +130,20 @@
                     </div>
 
                     <p class="mt-6 text-sm">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Rerum, quam impedit, deleniti minima assumend
+                      I'm a Karawang-based Informatics student and
+                      backend-focused full-stack developer, currently studying
+                      at Horizon University. I'm passionate about modern web
+                      development and continuously improving my skills across
+                      the JavaScript ecosystem, from building responsive React
+                      frontends to developing scalable backend services with
+                      Node.js, Express, and MongoDB.
                     </p>
 
                     <p class="mt-4 text-sm">
-                      Lorem ipsum dolor,
-                      <strong>sit amet consectetur</strong> adipisicing elit.
-                      Explicabo asperiores sed neque officia repellat nulla
-                      blanditiis! <strong>Aliquid inventore</strong> facilis
-                      ullam?
+                      Outside of web development, I enjoy experimenting with IoT
+                      projects and DIY electronics, where I can combine software
+                      and hardware to create practical solutions for real-world
+                      challenges.
                     </p>
                     <div class="flex mt-8 gap-4">
                       <div class="flex gap-4">
@@ -158,13 +163,15 @@
                 </div>
               </div>
             </section>
+
             <section id="about">
               <div class="p-4 pt-12 md:p-8 md:pt-12">
                 <div class="hidden lg:block">
                   <h2
                     class="mb-4 font-brand-primary text-xl font-extrabold tracking-tight text-stone-200 sm:text-3xl"
                     style="
-                      text-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px,
+                      text-shadow:
+                        rgba(0, 0, 0, 0.5) 10px 10px 10px,
                         rgba(0, 0, 0, 0.4) 14px 8px 20px,
                         rgba(0, 0, 0, 0.1) 30px 30px 30px;
                     "
@@ -206,7 +213,8 @@
                     <h2
                       class="mb-4 font-brand-primary text-2xl font-extrabold tracking-tight text-stone-200 sm:text-3xl"
                       style="
-                        text-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px,
+                        text-shadow:
+                          rgba(0, 0, 0, 0.5) 10px 10px 10px,
                           rgba(0, 0, 0, 0.4) 14px 8px 20px,
                           rgba(0, 0, 0, 0.1) 30px 30px 30px;
                       "
@@ -229,14 +237,54 @@
               </div>
             </section>
 
+            <!-- Statistic -->
+            <section id="stats">
+              <div class="p-4 pt-12 md:p-8 md:pt-8">
+                <!-- <div class="hidden lg:block">
+                  <h2
+                    class="mb-4 font-brand-primary text-2xl font-extrabold tracking-tight text-stone-200 sm:text-3xl"
+                    style="
+                      text-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px,
+                        rgba(0, 0, 0, 0.4) 14px 8px 20px,
+                        rgba(0, 0, 0, 0.1) 30px 30px 30px;
+                    "
+                  >
+                    Sta<span class="text-green-600">ts</span>
+                  </h2>
+                </div> -->
+
+                <div class="block">
+                  <h2
+                    class="mb-4 font-brand-primary text-2xl font-extrabold tracking-tight text-stone-200 sm:text-3xl"
+                    style="
+                      text-shadow:
+                        rgba(0, 0, 0, 0.5) 10px 10px 10px,
+                        rgba(0, 0, 0, 0.4) 14px 8px 20px,
+                        rgba(0, 0, 0, 0.1) 30px 30px 30px;
+                    "
+                  >
+                    <span class="text-green-600">Sta</span>ts
+                  </h2>
+                </div>
+
+                <div
+                  id="stats__container"
+                  class="grid grid-cols-2 gap-4 lg:grid-cols-4"
+                >
+                  <!-- For LOOP | JS -->
+                </div>
+              </div>
+            </section>
+
             <!-- Tech Stack -->
-            <section id="my_project">
+            <section id="tech_stack">
               <div class="p-4 pt-12 md:p-8 md:pt-12">
                 <div class="block">
                   <h2
                     class="mb-4 font-brand-primary text-2xl font-extrabold tracking-tight text-stone-200 sm:text-3xl"
                     style="
-                      text-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px,
+                      text-shadow:
+                        rgba(0, 0, 0, 0.5) 10px 10px 10px,
                         rgba(0, 0, 0, 0.4) 14px 8px 20px,
                         rgba(0, 0, 0, 0.1) 30px 30px 30px;
                     "
@@ -434,49 +482,15 @@
               </div>
             </section>
 
-            <section id="stats">
-              <div class="p-4 pt-12 md:p-8 md:pt-8">
-                <!-- <div class="hidden lg:block">
-                  <h2
-                    class="mb-4 font-brand-primary text-2xl font-extrabold tracking-tight text-stone-200 sm:text-3xl"
-                    style="
-                      text-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px,
-                        rgba(0, 0, 0, 0.4) 14px 8px 20px,
-                        rgba(0, 0, 0, 0.1) 30px 30px 30px;
-                    "
-                  >
-                    Sta<span class="text-green-600">ts</span>
-                  </h2>
-                </div> -->
-
-                <div class="block">
-                  <h2
-                    class="mb-4 font-brand-primary text-2xl font-extrabold tracking-tight text-stone-200 sm:text-3xl"
-                    style="
-                      text-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px,
-                        rgba(0, 0, 0, 0.4) 14px 8px 20px,
-                        rgba(0, 0, 0, 0.1) 30px 30px 30px;
-                    "
-                  >
-                    <span class="text-green-600">Sta</span>ts
-                  </h2>
-                </div>
-
-                <div
-                  id="stats__container"
-                  class="grid grid-cols-2 gap-4 lg:grid-cols-4"
-                >
-                  <!-- For LOOP | JS -->
-                </div>
-              </div>
-            </section>
+            <!-- My Project -->
             <section id="my_project">
               <div class="p-4 pt-12 md:p-8 md:pt-12">
                 <div class="hidden lg:block">
                   <h2
                     class="mb-4 font-brand-primary text-2xl font-extrabold tracking-tight text-stone-200 sm:text-3xl"
                     style="
-                      text-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px,
+                      text-shadow:
+                        rgba(0, 0, 0, 0.5) 10px 10px 10px,
                         rgba(0, 0, 0, 0.4) 14px 8px 20px,
                         rgba(0, 0, 0, 0.1) 30px 30px 30px;
                     "
@@ -488,7 +502,8 @@
                   <h2
                     class="mb-4 font-brand-primary text-2xl font-extrabold tracking-tight text-stone-200 sm:text-3xl"
                     style="
-                      text-shadow: rgba(0, 0, 0, 0.5) 10px 10px 10px,
+                      text-shadow:
+                        rgba(0, 0, 0, 0.5) 10px 10px 10px,
                         rgba(0, 0, 0, 0.4) 14px 8px 20px,
                         rgba(0, 0, 0, 0.1) 30px 30px 30px;
                     "
@@ -496,9 +511,43 @@
                     <span class="text-green-600">My</span> Projects
                   </h2>
                 </div>
+
                 <div id="myprojects__container" class="w-full">
                   <!-- /module/myproject.js | JS -->
                 </div>
+              </div>
+            </section>
+
+            <section id="education_n_experience">
+              <div class="p-4 pt-12 md:p-8 md:pt-12">
+                <div class="hidden lg:block">
+                  <h2
+                    class="mb-4 font-brand-primary text-2xl font-extrabold tracking-tight text-stone-200 sm:text-3xl"
+                    style="
+                      text-shadow:
+                        rgba(0, 0, 0, 0.5) 10px 10px 10px,
+                        rgba(0, 0, 0, 0.4) 14px 8px 20px,
+                        rgba(0, 0, 0, 0.1) 30px 30px 30px;
+                    "
+                  >
+                    My <span class="text-green-600">Projects</span>
+                  </h2>
+                </div>
+                <div class="block lg:hidden">
+                  <h2
+                    class="mb-4 font-brand-primary text-2xl font-extrabold tracking-tight text-stone-200 sm:text-3xl"
+                    style="
+                      text-shadow:
+                        rgba(0, 0, 0, 0.5) 10px 10px 10px,
+                        rgba(0, 0, 0, 0.4) 14px 8px 20px,
+                        rgba(0, 0, 0, 0.1) 30px 30px 30px;
+                    "
+                  >
+                    <span class="text-green-600">My</span> Projects
+                  </h2>
+                </div>
+
+                <!-- Content -->
               </div>
             </section>
 
@@ -519,6 +568,25 @@
     </div>
 
     <!-- All Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const bars = document.querySelectorAll(".bar");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const el = entry.target;
+                el.classList.add("animate-fill");
+                observer.unobserve(el);
+              }
+            });
+          },
+          { threshold: 0.4 },
+        );
+
+        bars.forEach((bar) => observer.observe(bar));
+      });
+    </script>
     <script type="module" src="./main.js"></script>
     <script type="module" src="./src/module/profile.js"></script>
     <script type="module" src="./src/module/social_media_links.js"></script>
